@@ -49,7 +49,7 @@ exports[`Snapshot test 1`] = `
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-123456789012-us-west-2",
-          "S3Key": "bc8ef58951f4c88e641dd23090e9d2e2e61c7530a07960e767522941e959b625.zip",
+          "S3Key": "56f7467bbde8a5efebcf57ae9e460027607099bab9f844669dcf5d800172ee5a.zip",
         },
         "Handler": "index.handler",
         "Role": {
@@ -1662,7 +1662,7 @@ exports[`Snapshot test 1`] = `
           {
             "Essential": false,
             "Image": {
-              "Fn::Sub": "123456789012.dkr.ecr.us-west-2.\${AWS::URLSuffix}/cdk-hnb659fds-container-assets-123456789012-us-west-2:8212bb6032c6f45fe8aa3802d732a1c334e09486001a46c78816d50319722a0b",
+              "Fn::Sub": "123456789012.dkr.ecr.us-west-2.\${AWS::URLSuffix}/cdk-hnb659fds-container-assets-123456789012-us-west-2:38c679f6184d7da5e254c08228a90de253f607b29e46a71cc1ab49ecee568c04",
             },
             "MountPoints": [
               {
@@ -2101,7 +2101,7 @@ exports[`Snapshot test 1`] = `
             ],
           },
         ],
-        "Cpu": "1024",
+        "Cpu": "2048",
         "ExecutionRoleArn": {
           "Fn::GetAtt": [
             "ApiServiceTaskExecutionRoleFE812553",
@@ -2109,7 +2109,7 @@ exports[`Snapshot test 1`] = `
           ],
         },
         "Family": "TestStackApiServiceTaskBFA8CBF7",
-        "Memory": "2048",
+        "Memory": "4096",
         "NetworkMode": "awsvpc",
         "RequiresCompatibilities": [
           "FARGATE",
