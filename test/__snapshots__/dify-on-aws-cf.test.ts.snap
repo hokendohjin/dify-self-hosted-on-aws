@@ -39,7 +39,7 @@ exports[`Snapshot test (with CloudFront) 1`] = `
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-123456789012-us-east-1",
-          "S3Key": "8a17fb3ceee821f797100bf65fa3047c164a08c03aa5a07fbcff9a676fb73b97.zip",
+          "S3Key": "d2191f6f199b95d1c044799f514b1ceca87200b3014c43c34839aad03dc69b8c.zip",
         },
         "Handler": "__entrypoint__.handler",
         "MemorySize": 128,
@@ -306,7 +306,7 @@ exports[`Snapshot test (with CloudFront) 2`] = `
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-123456789012-us-west-2",
-          "S3Key": "bc8ef58951f4c88e641dd23090e9d2e2e61c7530a07960e767522941e959b625.zip",
+          "S3Key": "56f7467bbde8a5efebcf57ae9e460027607099bab9f844669dcf5d800172ee5a.zip",
         },
         "Handler": "index.handler",
         "Role": {
@@ -1805,6 +1805,10 @@ exports[`Snapshot test (with CloudFront) 2`] = `
                 "Value": "us-west-2",
               },
               {
+                "Name": "S3_USE_AWS_MANAGED_IAM",
+                "Value": "true",
+              },
+              {
                 "Name": "DB_DATABASE",
                 "Value": "main",
               },
@@ -2054,7 +2058,7 @@ exports[`Snapshot test (with CloudFront) 2`] = `
           {
             "Essential": false,
             "Image": {
-              "Fn::Sub": "123456789012.dkr.ecr.us-west-2.\${AWS::URLSuffix}/cdk-hnb659fds-container-assets-123456789012-us-west-2:8212bb6032c6f45fe8aa3802d732a1c334e09486001a46c78816d50319722a0b",
+              "Fn::Sub": "123456789012.dkr.ecr.us-west-2.\${AWS::URLSuffix}/cdk-hnb659fds-container-assets-123456789012-us-west-2:38c679f6184d7da5e254c08228a90de253f607b29e46a71cc1ab49ecee568c04",
             },
             "MountPoints": [
               {
@@ -2459,7 +2463,7 @@ exports[`Snapshot test (with CloudFront) 2`] = `
             ],
           },
         ],
-        "Cpu": "1024",
+        "Cpu": "2048",
         "ExecutionRoleArn": {
           "Fn::GetAtt": [
             "ApiServiceTaskExecutionRoleFE812553",
@@ -2467,7 +2471,7 @@ exports[`Snapshot test (with CloudFront) 2`] = `
           ],
         },
         "Family": "TestStackApiServiceTaskBFA8CBF7",
-        "Memory": "2048",
+        "Memory": "4096",
         "NetworkMode": "awsvpc",
         "RequiresCompatibilities": [
           "FARGATE",
@@ -2826,7 +2830,7 @@ exports[`Snapshot test (with CloudFront) 2`] = `
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-123456789012-us-west-2",
-          "S3Key": "d41c8e6342cd078b5ea5aec11522bdb605eae00f4bb98a3fb0b44c827e9b5ca9.zip",
+          "S3Key": "f06f7035054cb2aada184c7c251ec5cb31fb6b5e975284939b9ff097603ea769.zip",
         },
         "Handler": "__entrypoint__.handler",
         "MemorySize": 128,
@@ -4757,7 +4761,7 @@ exports[`Snapshot test (with CloudFront) 2`] = `
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-123456789012-us-west-2",
-          "S3Key": "bdc104ed9cab1b5b6421713c8155f0b753380595356f710400609664d3635eca.zip",
+          "S3Key": "07a90cc3efdfc34da22208dcd9d211f06f5b0e01b21e778edc7c3966b1f61d57.zip",
         },
         "Description": "AWS CDK resource provider framework - onEvent (TestStack/cdk-ses-smtp-credentials.CredentialsProvider/ses-smtp-credentials-provider)",
         "Environment": {

@@ -53,8 +53,8 @@ export class ApiService extends Construct {
     const volumeName = 'sandbox';
 
     const taskDefinition = new FargateTaskDefinition(this, 'Task', {
-      cpu: 1024,
-      memoryLimitMiB: 2048, // We got OOM frequently when RAM=512MB
+      cpu: 2048,
+      memoryLimitMiB: 4096, // We got OOM frequently when RAM=512MB
       runtimePlatform: { cpuArchitecture: CpuArchitecture.X86_64 },
       volumes: [
         {
@@ -217,6 +217,7 @@ export class ApiService extends Construct {
         STORAGE_TYPE: 's3',
         S3_BUCKET_NAME: storageBucket.bucketName,
         S3_REGION: Stack.of(storageBucket).region,
+        S3_USE_AWS_MANAGED_IAM: 'true',
 
         DB_DATABASE: postgres.databaseName,
         // pgvector configurations
