@@ -1484,6 +1484,10 @@ exports[`Snapshot test 1`] = `
                 "Value": "us-west-2",
               },
               {
+                "Name": "S3_USE_AWS_MANAGED_IAM",
+                "Value": "true",
+              },
+              {
                 "Name": "DB_DATABASE",
                 "Value": "main",
               },
